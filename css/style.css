@@ -483,3 +483,64 @@ height:300px;
 }
 
 }
+/* ===========================
+   Scroll Animation
+=========================== */
+
+.hidden{
+
+    opacity:0;
+
+    transform:translateY(50px);
+
+    transition:.8s;
+
+}
+
+.active{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+
+/* ===========================
+   Mobile Menu
+=========================== */
+
+@media(max-width:900px){
+
+.menu{
+
+    position:absolute;
+
+    top:90px;
+
+    right:0;
+
+    width:240px;
+
+    background:rgba(255,255,255,.95);
+
+    backdrop-filter:blur(15px);
+
+    border-radius:20px;
+
+    flex-direction:column;
+
+    padding:25px;
+
+    display:none;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.1);
+
+}
+
+.menu.show{
+
+    display:flex;
+
+}
+
+}
